@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KanLine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>KanLine</h1>
+      <button id="toggleTheme" aria-label="Alternar tema">🌙</button>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Digite uma nova tarefa..."/>
+      <button id="addTaskBtn" aria-label="Adicionar tarefa">+</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">Todas</button>
+      <button class="filter" data-filter="pending">Pendentes</button>
+      <button class="filter" data-filter="doing">Fazendo</button>
+      <button class="filter" data-filter="done">Concluídas</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
